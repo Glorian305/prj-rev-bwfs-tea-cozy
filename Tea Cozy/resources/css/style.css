@@ -1,0 +1,146 @@
+/*Page*/
+
+* {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9
+}
+
+/*Headings*/
+
+h2 { font-size: 1.6rem;}
+h3 { font-size: 1.2rem;}
+h4 { font-size: 1rem;}
+h5 { font-size: 0.9rem;}
+
+
+h2, h3, h4 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+h5 {
+  text-align: center;
+  margin: 0;
+}
+
+
+/*Header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  height: 69px;
+  width: 100%;
+  border-bottom: solid seashell;
+  top: 0px;
+  z-index: 1;
+}
+
+header img {
+  height: 50px;
+  margin-left: 10px;
+}
+
+nav span {
+  margin: 10px;
+  text-decoration: underline;  /*added per spec, but un-necessary since anchors are underlined already*/
+}
+
+
+body {
+  position: relative;
+  top: 69px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Mission section*/
+
+#mission {
+  height: 700px;
+  width: 1200px;
+  background-image: url("../../resources/images/img-mission-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*Product section*/
+
+#featured-tea {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.tiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile img {
+  width: 300px;
+  height: 200px;
+  margin: 15px 10px 0px 10px;  /*the 10px gap between image bottom and h4 heading is met with the 10px h4 padding*/
+}
+
+/*Locations section*/
+
+#locations {
+  height: 500px;
+  width: 1200px;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 70px;  /*this makes the total height 570px instead of 500px but displays the background image as is in the demo page */
+}
+
+.locations-title {
+  background-color: transparent;
+}
+
+.black-tiles {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.black-tile {
+  width: 300px;
+  background-color: black;
+  opacity: 1;
+  margin: 5px 20px;  /*the 5px add to the 10px of the h2 padding to meet the 15px spec */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+.black-tile span {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+/*Footer*/
+
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.copy {
+  align-self: flex-start;
+  margin: 40px 20px;
+}
